@@ -11,13 +11,13 @@ def count_bits(n):
             r = D%d
             num.append(r)
             D = q
-            print(r)
+
         num.append(q)
         binario = num[::-1]
     else:
         pass
 
-    cantidad = list(filter(lambda x: x==1, binario))
-    return len(cantidad)
+    return binario.count(1)
 
-count_bits(21)
+a=count_bits(21)
+print(a)
